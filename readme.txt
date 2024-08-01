@@ -20,3 +20,9 @@ Text Domain: influencers
 == Changelog ==
 = 1.0 =
 * Released: Feb 17, 2024
+
+= 1.1 =
+* Released: Aug 01, 2024
+- Create auto update option
+- update new version wordpress and plguins
+- Update small issue
