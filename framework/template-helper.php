@@ -53,20 +53,6 @@ if ( ! function_exists( 'influencers_setup' ) ) {
 }
 add_action( 'after_setup_theme', 'influencers_setup' );
 
-/* Add Theme Options Page */
-function influencers_add_theme_options_page() {
-  if( function_exists('acf_add_options_page') ) {
-    $option_page = acf_add_options_page(array(
-			'page_title'    => esc_html__('Theme Options', 'influencers'),
-      'menu_title'    => esc_html__('Theme Options', 'influencers'),
-      'menu_slug'     => 'theme-options-page',
-      'capability'    => 'edit_posts',
-      'redirect'      => false
-    ));
-  }
-}
-add_action('acf/init', 'influencers_add_theme_options_page');
-
 /* Custom Site Title */
 if ( ! function_exists( 'influencers_wp_title' ) ) {
 	function influencers_wp_title( $title, $sep ) {
